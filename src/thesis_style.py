@@ -109,9 +109,9 @@ def figsize(width_fraction: float = 1.0, aspect: float = 0.62):
     return (w, w * aspect)
 
 
-# Grey-scale-safe palette (prints well in black and white).
-PALETTE = ["#1b1b1b", "#5f5f5f", "#9a9a9a", "#c8c8c8", "#7a1f1f"]
-LINESTYLES = ["-", "--", "-.", ":", (0, (5, 1, 1, 1))]
+# Muted palette for the five score groups (0, 1, 2, 3, not scored); solid lines, groups told apart by colour.
+PALETTE = ["#2b2b2b", "#4f6d8f", "#7a9a6a", "#c49a4a", "#8c3b3b"]
+LINESTYLES = ["-", "-", "-", "-", "-"]
 
 
 def save_figure(fig, name: str, folder=None, png: bool = True) -> None:

@@ -46,7 +46,7 @@ def fig5_2():
     hr, lo, hi = res["exp(coef)"], res["exp(coef) lower 95%"], res["exp(coef) upper 95%"]
     fig, ax = plt.subplots(figsize=figsize(1.0, 0.5))
     ax.errorbar(hr, y, xerr=[hr - lo, hi - hr], fmt="o", color=PALETTE[0], capsize=3, markersize=4)
-    ax.axvline(1, color=PALETTE[2], linestyle="--", linewidth=0.8)
+    ax.axvline(1, color="#8c8c8c", linestyle="--", linewidth=0.8)
     ax.set_xscale("log")
     ax.set_xlim(0.45, 2.4)
     ax.set_xticks([0.5, 0.75, 1, 1.5, 2])

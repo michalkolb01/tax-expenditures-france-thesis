@@ -35,11 +35,11 @@ def main():
     for g, col, ls in zip(ORDER, PALETTE, LINESTYLES):
         s = d[d["group"] == g]
         sf = KaplanMeierFitter().fit(s["duration"], event_observed=s["event"]).survival_function_.iloc[:, 0]
-        ax.step(sf.index + ORIGIN, sf.values, where="post", color=col, linestyle=ls,
+        ax.step(sf.index + ORIGIN, sf.values, where="post", color=col, linestyle=ls, linewidth=1.8,
                 label=f"{LABEL[g]} ($n$ = {len(s)})")
     ax.set_xlim(ORIGIN, 2026)
     ax.set_xticks(range(2012, 2027, 2))
-    ax.set_ylim(0, 1.02)
+    ax.set_ylim(0.5, 1.01)   # axis starts at 0.5; noted in the caption
     ax.set_xlabel("Year")
     ax.set_ylabel("Share of measures not terminated")
     ax.legend(loc="lower left")

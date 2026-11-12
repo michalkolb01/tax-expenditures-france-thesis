@@ -1,0 +1,14 @@
+# Raw public sources: downloaded by 00_acquisition/, too large for the repository
+data/raw/*
+!data/raw/.gitkeep
+# Large rebuilt files (plenary blocks): rebuild with 03_debate_corpus/ or download from the archive
+data/intermediate/debate_blocks*.parquet
+# Python and notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Secrets: never commit API keys
+.env
+*.key
+# System files
+.DS_Store

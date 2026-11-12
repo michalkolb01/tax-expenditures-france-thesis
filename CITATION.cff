@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Why evaluation is not enough: tax expenditures in France, 2011-2026 (replication package)"
+authors:
+  - family-names: Kolb
+    given-names: Michal
+    affiliation: "Sciences Po, Paris School of International Affairs"
+type: software
+license: MIT
+repository-code: "https://github.com/michalkolb01/tax-expenditures-france-thesis"
+date-released: 2026-11-12
+keywords:
+  - tax expenditures
+  - policy evaluation
+  - policy termination
+  - France
+  - parliamentary debates

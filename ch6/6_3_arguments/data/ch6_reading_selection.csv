@@ -1,0 +1,24 @@
+sheet,measure,name,score,n,available,kept,rule
+M01,200302,Crédit d'impôt en faveur de la recherche,3,456,333.0,40.0,One of the 9 most debated measures
+M02,110246,Crédit d'impôt au titre de l'emploi d'un salarié à domicile,2,231,192.0,40.0,One of the 9 most debated measures
+M03,110201,Réduction d'impôt au titre des dons,1,218,142.0,40.0,One of the 9 most debated measures
+M04,520110,"Exonération partielle, sous certaines conditions, de droits de mutation à titre gratuit lors de la transmission d'entreprises exploitées sous la forme individuelle ou détenues sous forme sociale",3,176,137.0,40.0,One of the 9 most debated measures
+M05,210309,Réduction d'impôt au titre des dons faits par les entreprises à des oeuvres ou organismes d'intérêt général,2,101,65.0,40.0,One of the 9 most debated measures
+M06,120136,Exonération d'impôt sur le revenu des heures (et jours) supplémentaires et des heures complémentaires de travail,1,94,49.0,40.0,One of the 9 most debated measures
+M07,110256,Réduction d'impôt au titre des investissements effectués dans le secteur du logement social dans les collectivités d'outre-mer et en Nouvelle-Calédonie,2,79,20.0,20.0,One of the 9 most debated measures
+M08,320119,Détermination du résultat imposable des entreprises de transport maritime en fonction du tonnage de leurs navires,3,73,61.0,40.0,One of the 9 most debated measures
+M09,120113,"Exonération partielle de la prise en charge par l'employeur, une collectivité territoriale ou l’opérateur France Travail, des frais de transport entre le domicile et le lieu de travail",0,71,25.0,25.0,One of the 9 most debated measures
+M10,210305,Crédit d'impôt pour investissement en Corse,0,71,49.0,40.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M11,110213,Réduction d'impôt au titre des frais de dépendance et d'hébergement pour les personnes dépendantes accueillies en établissement spécialisé,0,59,51.0,40.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M12,120111,Exonération de la participation des employeurs au financement des titres-restaurant,1,56,44.0,40.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M13,170105,Déduction pour aléas,1,55,32.0,32.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M14,110224,Réduction d'impôt sur le revenu à raison des investissements productifs réalisés dans les départements et collectivités d'outre-mer,1,54,42.0,40.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M15,320128,Crédit d'impôt pour la production phonographique,0,49,12.0,12.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M16,320113,Déduction des investissements productifs réalisés dans les départements et collectivités d'outre-mer et des souscriptions au capital de sociétés qui réalisent de tels investissements,1,36,22.0,22.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M17,110236,Crédit d'impôt pour dépenses d'équipements de l'habitation principale en faveur de l'aide aux personnes,0,33,16.0,16.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M18,520105,Exonération des monuments historiques classés ou inscrits et des parts de SCI familiales détenant des biens de cette nature,0,32,7.0,7.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M19,110210,"Réduction d’impôt au titre des investissements locatifs et de la souscription au capital de certaines sociétés réalisés jusqu’au 31/12/2017 et au titre des travaux de réhabilitation de logements réalisés jusqu’au 31/12/2029, dans les départements d'outre-mer, à Saint-Pierre-et-Miquelon, en Nouvelle-Calédonie, en Polynésie française, dans les îles Wallis et Futuna et les Terres australes et antarctiques françaises",0,31,21.0,21.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M20,120114,Exonération des majorations de retraite ou de pension des personnes ayant eu ou élevé au moins trois enfants,0,26,15.0,15.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M21,110218,Réduction d'impôt au titre de la souscription de parts de fonds communs de placement dans l'innovation (FCPI),1,25,16.0,16.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M22,400109,"Exonération des objets d'antiquité, d'art ou de collection, des droits de propriété littéraire et artistique et des droits de propriété industrielle pour leur inventeur",1,24,4.0,4.0,"Scored 0 or 1 in 2011, at least 20 interventions"
+M23,110240,Crédit d'impôt au titre des dépenses engagées par les exploitants agricoles pour assurer leur remplacement,1,24,18.0,18.0,"Scored 0 or 1 in 2011, at least 20 interventions"

@@ -1,7 +1,7 @@
 """Figure 5.1 - Kaplan-Meier: share of measures not terminated, by 2011 score.
 
 Redraws the analysis notebook's figure (Untitled9.ipynb, cells 13-20 and 34)
-with src/thesis_style.py (Latin Modern Roman, grey-scale palette, no title).
+with src/thesis_style.py (Latin Modern Roman, muted palette, solid lines, no title).
 
 Input   data/intermediate/termination_dataset_v35.csv
 Output  figures/fig5_1_survival_by_score.pdf (+ .png)

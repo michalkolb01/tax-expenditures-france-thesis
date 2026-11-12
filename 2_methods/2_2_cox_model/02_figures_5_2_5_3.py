@@ -2,7 +2,7 @@
 
 Redraws the analysis notebook's figures (Untitled9.ipynb: hazard ratios,
 cell 29; terminations per year, cell 35) with src/thesis_style.py. Same data
-and estimates; only the styling changed (fonts, size, grey-scale palette, no
+and estimates; only the styling changed (fonts, size, muted palette, solid lines, no
 titles - captions are set in LaTeX). Figure 5.1 is drawn in
 2_methods/2_1_survival_analysis/02_figure_5_1.py.
 

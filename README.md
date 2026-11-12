@@ -51,7 +51,7 @@ Shared data are in `data/` (`raw/` for downloaded sources, `intermediate/` for b
 | Part | Status |
 |---|---|
 | Chapter 5 numbers and Table 5.1 | ✅ reproduce (run after the reorganisation) |
-| Figures 5.1–5.3 | ⚠️ to render in Colab (Latin Modern fonts), see below |
+| Figures 5.1–5.3 | ✅ in `figures/` (PDF + PNG), built from commit 9e95334 with Latin Modern installed; the PDFs embed LMRoman10 (checked with `pdffonts`) |
 | 6.2.1, 6.2.2, 6.3, 6.4 | ✅ reproduce (run after the reorganisation) |
 | Dossiers | ⚠️ plenary passages complete only after a run in Colab with the plenary blocks, see below |
 | Pipeline (`1_data/`) | ✅ scripts, prompts and manifests; downloads, PDF parsing and the LLM step not re-run (raw data needed) |

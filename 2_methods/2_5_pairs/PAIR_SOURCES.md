@@ -16,17 +16,17 @@ are reproduced by `02_extract_pair_debates.py` (files `data/pair_*_passages.csv`
 |---|---|---|
 | Exemption of pension increases for parents of 3+ children (code 120114), scored 0 | Panel; Comité d'évaluation (2011) | ✅ |
 | School-fee reductions: two codes, 110215 (secondary, scored 0) and 110242 (higher education, scored 1) | Panel | ✅ |
-| Both proposed for removal in the finance bill for 2014 (bill no. 1395), articles 6 and 4 | Bill no. 1395 | ⚠️ article numbers |
+| Both proposed for removal in the finance bill for 2014 (bill no. 1395), articles 6 and 4 | Bill no. 1395 (pl1395.pdf, table of contents) | ✅ |
 | Committee examination 9 October 2013; plenary 17 October 2013 | Committee minutes (committee_blocks_14, session 13-14); DILA plenary record of 17 October 2013 | ✅ (17 Oct: known-item test, 6.2.2) |
-| Pension exemption abolished (article adopted, eight amendments to keep it rejected) | Plenary record, 17 October 2013 | ⚠️ count of amendments |
-| School-fee article deleted in committee and then unanimously in plenary; government left the decision to the Assembly | Committee minutes 9 Oct 2013; plenary 17 Oct 2013 | ⚠️ |
+| Pension exemption abolished (article adopted, eight amendments to keep it rejected) | Plenary record, 2nd sitting of 17 October 2013 (JO pp. 10039–10052, https://www.assemblee-nationale.fr/14/pdf/cri/2013-2014/20140025.pdf) | ✅ |
+| School-fee article (article 4) deleted: the committee was unanimous; in plenary, nine identical deletion amendments (278, 22, 157, 257, 341, 366, 509, 682, 873) were adopted; the government left the decision to the Assembly | Committee minutes 9 Oct 2013; Plenary record, 2nd sitting of 17 October 2013 (JO pp. 10039–10052, https://www.assemblee-nationale.fr/14/pdf/cri/2013-2014/20140025.pdf) | ✅ |
 | School-fee reductions survived later removal proposals in 2022, 2023, 2024 and 2026 | Amendments (amendments_classified.csv); PLF 2026 article 5 and final law | ⚠️ 2022–2024 to cite individually |
-| Cost: pension exemption about €1.2 bn; school fees about €440 m (two codes together) | Annex to the PLF 2014 (VMT II), costs for 2013 | ⚠️ cite the annex lines |
-| €810 m of €1.2 bn to the three highest deciles (rapporteur général) | Rapporteur général's report on the PLF 2014 / plenary 17 Oct 2013 | ⚠️ page reference |
-| Richest tenth +1.8% vs poorest half +0.1% (minister) | Plenary 17 October 2013 | ⚠️ |
+| Cost: pension exemption about €1.2 bn; school fees about €440 m (two codes together) | Plenary record, 2nd sitting of 17 October 2013 | ✅ |
+| €810 m of €1.2 bn to the three highest deciles (rapporteur général) | Rapporteur général, plenary record, 2nd sitting of 17 October 2013, citing report no. 1428, vol. II, p. 111 | ✅ |
+| Richest tenth +1.8% vs poorest half +0.1% (minister) | Minister, plenary record, 2nd sitting of 17 October 2013 | ✅ |
 | Reduction amounts: €61, €153, €183 per child | CGI art. 199 quater F | ✅ |
-| About 3.8 million taxable retirees (about 70%) received the pension increase | Plenary 17 October 2013 (speaker figure) | ✅ quoted as "figures given in the debate" |
-| 2.2–2.7 million taxable families claimed the school-fee reductions | Plenary 2013; committee 2025 | ⚠️ settle one figure |
+| About 3.8 million taxable retirees (about 70%) received the pension increase | Minister, plenary record, 2nd sitting of 17 October 2013 | ✅ |
+| 1.6 million households (secondary) and 1.15 million (higher education) claimed the school-fee reductions | Amendment I-CF142 | ✅ |
 | Defenders: family policy, natality, burden on large families | Plenary 17 and 25 October 2013 | ✅ |
 | The 2011 evaluation cited once on school fees (Dalloz, quoting the rapporteur général's report: "impossible to take away from families") | evaluation2011_candidates_RAW_reviewed.csv, 17 Oct 2013 | ✅ |
 
@@ -43,12 +43,13 @@ are reproduced by `02_extract_pair_debates.py` (files `data/pair_*_passages.csv`
 | Rapporteur général: allowances for sick leave unrelated to the illness could be taxed; de Courson: tax half | Committee minutes 20 Oct 2025 | ✅ |
 | Committee voted to keep the exemption (identical amendments I-CF528, I-CF1182, I-CF1867, I-CF1876 adopted) | Committee minutes 20 Oct 2025 | ✅ |
 | Assembly first voted on the floor to keep the medal exemption; abolition retained by the joint committee | Finance Committee report no. 2935 on bill no. 2790 | ✅ |
-| Final law: medal exemption abolished; illness allowances kept fully exempt | BOFiP BOI-RSA-CHAMP-20-50-40-20260506; Senioractu (2026) | ⚠️ cite the law article (loi de finances pour 2026; check its number and date) |
+| Final law: medal exemption abolished; illness allowances kept fully exempt | Law no. 2026-103 of 19 February 2026, article 17 (I-5°); BOFiP BOI-RSA-CHAMP-20-50-40-20260506 | ✅ |
 | Senate first voted a 50% exemption | Public Sénat | ✅ (dropped from the text) |
-| Minister: average gain about €27 per recipient | Amendment no. 15 to bill no. 2790 (LFI), reporting the minister | ⚠️ find the plenary passage |
+| Minister: average gain about €27 per recipient | Amendment no. 15 to bill no. 2790 (LFI), reporting the minister; no plenary passage found | ⚠️ reported in amendment no. 15 only |
+| Medal exemption: €8 m a year, 300,000 households | Report no. 2935 | ✅ |
 | Restoration bill no. 2790 (12 May 2026): bonus is symbolic recognition of work, out of line with other honours | Bill no. 2790 | ✅ |
 | Finance Committee rejected bill no. 2790 | Report no. 2935 | ✅ |
-| Government declined to support restoration | Written answer, 30 June 2026 (question no. 14485) | ⚠️ add the reference |
+| Government declined to support restoration | Written answer to question no. 14485 (Gosselin), JO 30 June 2026, p. 6091: defends the abolition, no restoration announced | ✅ |
 
 ## Pair C – Local investment funds, mainland and Corsica (finance bill for 2025, debated October 2024)
 

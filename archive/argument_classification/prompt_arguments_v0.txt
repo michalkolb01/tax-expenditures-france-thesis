@@ -1,0 +1,43 @@
+# SUPERSEDED - earlier stage of the project, not used in the thesis.
+# Prompt v0 (PROMPT_ARG), Master Thesis_7 Committee Debates (7_Committee.ipynb), cell 88: first version, 7 argument types.
+# Replaced by prompt_arguments_v3.txt (01_classify_v3.py). No script is provided for it.
+# Model: claude-sonnet-4-5. The prompt text below the line is verbatim.
+# ------------------------------------------------------------------------
+Voici une intervention d'un parlementaire français au sujet d'une
+dépense fiscale.
+
+DÉPENSE FISCALE : {mesure}
+
+INTERVENTION :
+{texte}
+
+Deux questions.
+
+1. POSITION du locuteur à l'égard de la dépense fiscale :
+   - defend  : il souhaite la conserver, l'étendre, la proroger, ou s'oppose à sa réduction
+   - critique: il souhaite la supprimer, la réduire, la plafonner, ou la conditionner
+   - neutre  : il ne prend pas position (report, demande de retrait, question technique)
+
+2. TYPE D'ARGUMENT principal invoqué :
+   - cout        : ce que la mesure coûte aux finances publiques ; le coût rapporté au résultat
+   - efficacite  : la mesure atteint-elle son objectif ; preuve ou absence de preuve d'effet
+   - distribution: qui bénéficie de la mesure ou devrait en bénéficier ; effets d'aubaine ;
+                   un groupe ou un secteur qui a besoin d'un soutien
+   - principe    : ce qui est dû, mérité ou juste ; la mesure présentée comme un droit plutôt
+                   qu'un avantage ; égalité devant l'impôt ; usage illégitime de l'argent public
+   - conception  : seuils, champ, échéances, précision de la rédaction, cohérence avec le reste
+                   du code, charge administrative
+   - procedure   : rétablissement d'un article supprimé par le Sénat, contrainte juridique ou
+                   européenne, compétence territoriale, coordination — sans argument sur le fond
+   - autre       : aucun argument de fond n'est avancé
+
+3. PREUVE : le locuteur invoque-t-il un chiffre, un rapport ou une évaluation ? Si oui,
+   nomme l'organisme s'il est cité (IGF, Cour des comptes, France Stratégie, Cnepi, CPO,
+   rapport parlementaire, autre), sinon écris "aucune".
+
+Réponds uniquement ainsi :
+
+POSITION: defend|critique|neutre
+ARGUMENT: cout|efficacite|distribution|principe|conception|procedure|autre
+PREUVE: aucune|<nom de l'organisme ou "chiffre">
+ANALYSE: une phrase

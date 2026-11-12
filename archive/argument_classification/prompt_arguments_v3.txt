@@ -1,0 +1,101 @@
+Voici une intervention d'un parlementaire français au sujet d'une dépense fiscale.
+
+DÉPENSE FISCALE : {mesure}
+
+INTERVENTION :
+{texte}
+
+Réponds aux questions suivantes, dans l'ordre.
+
+0. L'intervention porte-t-elle sur cette dépense fiscale ? Elle porte sur la mesure si elle
+   traite de la dépense fiscale elle-même, d'un amendement qui la modifie (même sans la
+   nommer) ou d'un avis sur cet amendement. Si elle traite d'un autre sujet, y compris d'un
+   autre dispositif du même impôt, réponds "hors_sujet" : position "neutre", catégorie
+   "hors_sujet", et passe directement à la réponse. En cas de doute sur ce que modifie un
+   amendement, considère qu'il porte sur la mesure.
+
+1. POSITION du locuteur à l'égard de cette dépense fiscale :
+   - defend   : il souhaite la conserver, l'étendre, la proroger, ou s'oppose à sa réduction
+   - critique : il souhaite la supprimer, la réduire, la plafonner ou la conditionner
+   - neutre   : il ne prend pas position (report, demande de retrait, question technique)
+
+2. ARGUMENT PRINCIPAL : en une phrase, sur quoi le locuteur s'appuie-t-il principalement
+   pour défendre ou critiquer la mesure ?
+
+3. CATÉGORIE de cet argument principal (une seule). Les catégories sont regroupées selon
+   la question à laquelle l'argument répond :
+
+   A. Ce que la mesure PRODUIT ou COÛTE, au regard de son objectif
+     - efficacite : la mesure atteint ou n'atteint pas son objectif ; ses effets, y compris
+                    indésirables ; l'absence de preuve ou d'évaluation de ses effets
+     - cout       : ce que la mesure coûte aux finances publiques ; son coût rapporté au
+                    résultat ; une alternative moins coûteuse ; une dépense budgétaire
+                    serait plus adaptée
+     - aubaine    : les bénéficiaires auraient agi de la même façon sans la mesure
+     - ciblage    : la mesure manque sa cible ou profite à des bénéficiaires qu'elle ne
+                    visait pas, au regard de son objectif (y compris une mesure à but
+                    redistributif qui profite surtout aux plus aisés)
+
+   B. La SITUATION des bénéficiaires et la CONCEPTION de la mesure
+     - besoin     : un groupe, un secteur ou un territoire a besoin d'un soutien ; la
+                    situation des bénéficiaires justifie la mesure, son élargissement, sa
+                    pérennisation, ou une exception pour une situation particulière
+     - conception : seuils, champ, échéances, rédaction, cohérence avec le reste du code,
+                    charge administrative
+
+   C. Ce qui est JUSTE, DÛ ou PRÉCIEUX pour la société
+     - valeurs    : l'argument repose sur l'équité, un droit ou l'intérêt général.
+                    Précise "detail" : "equite" (répartition juste ou injuste, égalité devant
+                    l'impôt), "droit" (la mesure est due : droit, réparation, contrepartie),
+                    "interet_general" (l'objectif importe pour la société dans son ensemble)
+
+   D. AUCUN ARGUMENT SUR LE FOND
+     - renvoi     : retrait, report, attente d'un rapport ou d'une évaluation, sans argument
+                    sur le fond
+     - procedure  : rétablissement d'un article supprimé par le Sénat, contrainte juridique
+                    ou européenne, coordination rédactionnelle, fonctionnement du débat
+                    parlementaire
+     - autre      : l'intervention porte sur la mesure mais n'avance aucun argument
+     - hors_sujet : l'intervention ne porte pas sur cette dépense fiscale (voir question 0)
+
+   Règles de distinction :
+   - Si l'intervention mêle plusieurs arguments, retiens celui sur lequel repose la
+     conclusion du locuteur, pas celui qui est mentionné en premier.
+   - « Cette mesure a permis de créer 3 000 emplois » = efficacite.
+     « Soutenir cette filière est vital pour le pays » = valeurs (interet_general).
+     Ce qui compte : l'argument porte-t-il sur ce que la mesure a FAIT, ou sur l'importance
+     de son OBJECTIF ?
+   - « Cette niche n'a jamais été évaluée, on ne sait pas si elle sert à quelque chose »
+     = efficacite (l'argument porte sur l'absence de preuve de ses effets).
+     « Évaluons la mesure avant de la prolonger » = renvoi.
+   - « Les agriculteurs ne peuvent pas s'en sortir sans ce dispositif » = besoin.
+     « Les agriculteurs y ont droit après des décennies de sacrifices » = valeurs (droit).
+   - « Les entreprises auraient investi de toute façon » = aubaine.
+   - « Le dispositif rate sa cible : il profite à des entreprises qui ne sont pas en
+     difficulté » = ciblage (la mesure n'atteint pas son objectif).
+     « Ce crédit d'impôt profite surtout aux ménages aisés, c'est injuste » = valeurs (equite).
+     Ce qui compte : le locuteur juge-t-il la mesure par rapport à SON OBJECTIF, ou par
+     rapport à ce qui est JUSTE ?
+   - Lorsqu'un vocabulaire moral (justice, équité, bon sens) accompagne une proposition dont
+     la substance est technique (un seuil, un champ, une date), retiens "conception".
+   - Une simple affirmation qu'il faut maintenir, étendre ou proroger la mesure, sans
+     qu'aucune raison soit donnée, relève de "autre".
+   - Une remarque sur le comportement du gouvernement ou des autres groupes dans le débat,
+     ou sur le sens d'un vote, sans raison portant sur la mesure elle-même, relève de
+     "procedure" ou de "autre", jamais de "valeurs".
+
+4. PREUVE : le locuteur s'appuie-t-il sur un élément vérifiable ?
+   "aucune", "chiffre" (un montant, un nombre de bénéficiaires, un taux), ou "rapport"
+   (une évaluation, une étude, un rapport).
+
+5. ORGANISME cité, s'il y en a un : "guillaume" (comité d'évaluation des dépenses fiscales
+   et des niches sociales, 2011), "cour_des_comptes", "igf", "cpo", "france_strategie",
+   "cnepi", "rapport_parlementaire", "administration" (Bercy, DLF, Voies et moyens),
+   "autre", ou "aucun".
+
+6. COUT_MENTIONNE : le locuteur mentionne-t-il, même en passant, le coût de la mesure ou
+   la perte de recettes ? true ou false.
+
+Réponds uniquement par un objet JSON, sans autre texte :
+{{"position": "...", "argument_principal": "...", "categorie": "...", "detail": "... ou null",
+  "preuve": "...", "organisme": "...", "cout_mentionne": true}}

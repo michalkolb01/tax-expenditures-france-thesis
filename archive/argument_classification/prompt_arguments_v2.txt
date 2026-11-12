@@ -1,0 +1,59 @@
+# SUPERSEDED - earlier stage of the project, not used in the thesis.
+# Prompt v2 (PROMPT_ARG), Master Thesis_7 Committee Debates (7_Committee.ipynb), cell 104: splits "distribution" into "ciblage" and "besoin"; used for arguments_v2.csv (cell 105, 500-turn sample).
+# Replaced by prompt_arguments_v3.txt (01_classify_v3.py). No script is provided for it.
+# Model: claude-sonnet-4-5. The prompt text below the line is verbatim.
+# ------------------------------------------------------------------------
+Voici une intervention d'un parlementaire français au sujet d'une
+dépense fiscale.
+
+DÉPENSE FISCALE : {mesure}
+
+INTERVENTION :
+{texte}
+
+Trois questions.
+
+1. POSITION du locuteur à l'égard de la dépense fiscale :
+   - defend  : il souhaite la conserver, l'étendre, la proroger, ou s'oppose à une
+               proposition qui la réduirait
+   - critique: il souhaite la supprimer, la réduire, la plafonner, la conditionner, ou
+               s'oppose à une proposition qui l'élargirait
+   - neutre  : il ne prend aucun parti
+
+   Attention : une intervention qui s'oppose à un amendement restrictif DÉFEND la dépense
+   fiscale, même si le locuteur ne se prononce pas explicitement sur son bien-fondé.
+
+2. TYPE D'ARGUMENT principal. Choisis selon ce sur quoi repose l'argument :
+   - cout        : ce que la mesure coûte aux finances publiques ; le coût rapporté au résultat
+   - efficacite  : la mesure produit-elle l'effet recherché. Réserve cette catégorie aux
+                   arguments portant sur les résultats constatés ou leur absence
+   - ciblage     : où va effectivement l'avantage — qui en bénéficie aujourd'hui, effets
+                   d'aubaine, captation par des intermédiaires, bénéficiaires non visés
+   - besoin      : un groupe, un secteur ou un territoire mérite ou nécessite un soutien ;
+                   la situation des bénéficiaires justifie la mesure ou son élargissement
+   - principe    : l'argument repose sur la justice, le droit, la dignité ou la légitimité —
+                   la mesure présentée comme un droit plutôt qu'un avantage, l'égalité devant
+                   l'impôt, l'usage illégitime de l'argent public
+   - conception  : seuils, échéances, précision de la rédaction, cohérence avec le reste du
+                   code, charge administrative
+   - renvoi      : le locuteur diffère la question — retrait, report, attente d'un rapport —
+                   sans argumenter sur le fond
+   - procedure   : rétablissement d'un article supprimé par le Sénat, contrainte juridique ou
+                   européenne, coordination rédactionnelle
+   - autre       : aucun argument de fond n'est avancé
+
+   Distinction importante : "ciblage" porte sur qui reçoit l'avantage en pratique ;
+   "besoin" porte sur qui mérite d'être aidé. « Ce crédit d'impôt profite surtout aux
+   ménages aisés » = ciblage. « Les Restos du cœur vont devoir refuser du monde » = besoin.
+
+3. PREUVE. Le locuteur s'appuie-t-il sur :
+   - un organisme ou un rapport nommé → écris son nom
+   - un chiffre sans source nommée → écris "chiffre"
+   - ni l'un ni l'autre → écris "aucune"
+
+Réponds uniquement ainsi :
+
+POSITION: defend|critique|neutre
+ARGUMENT: cout|efficacite|ciblage|besoin|principe|conception|renvoi|procedure|autre
+PREUVE: <nom>|chiffre|aucune
+ANALYSE: une phrase

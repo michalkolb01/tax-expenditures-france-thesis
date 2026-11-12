@@ -1,0 +1,37 @@
+Dépense fiscale n° {code}
+Intitulé : {label}
+Base légale : article {ref} du code général des impôts
+
+Amendement — dispositif :
+{dispositif}
+
+Amendement — exposé des motifs :
+{expose}
+
+Cet amendement a été rapproché de la dépense fiscale parce qu'il cite un
+article de sa base légale. Mais un même article contient souvent
+plusieurs dispositifs distincts : l'article 278 bis-5° porte sur les
+engrais, le 278 bis-4° sur les aliments pour animaux. Un amendement qui
+modifie un autre alinéa portant sur un tout autre sujet, ou qui insère un
+article VOISIN créant un dispositif distinct (par exemple un article
+209-0 C à côté du 209-0 B), ne porte pas sur cette dépense fiscale.
+
+En revanche, un amendement qui insère un nouvel alinéa À L'INTÉRIEUR de
+l'article de la base légale, ou qui en modifie le champ, la durée, le
+plafond ou le taux, porte bien sur cette dépense fiscale.
+
+Attention au sens de « etend » et « restreint » : une dépense fiscale se
+mesure par la recette à laquelle l'État renonce. Abaisser un taux réduit
+de 10 % à 5,5 % AUGMENTE la dépense fiscale (etend), même si le taux
+baisse. Relever un taux vers le taux normal la RÉDUIT (restreint).
+
+Réponds uniquement ainsi :
+
+PERTINENT: oui|non
+CATEGORIE: supprime|restreint|etend|maintient|technique|autre
+ANALYSE: une phrase
+
+(autre si PERTINENT vaut non | supprime = abroge la dépense fiscale |
+restreint = réduit son champ, son plafond, sa durée ou son avantage |
+etend = les augmente | maintient = s'oppose à une suppression proposée
+ailleurs dans le texte | technique = coordination sans effet de fond)

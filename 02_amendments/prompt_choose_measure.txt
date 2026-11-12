@@ -1,0 +1,31 @@
+Amendement — dispositif :
+{dispositif}
+
+Amendement — exposé des motifs :
+{expose}
+
+Cet amendement cite l'article {article} du code général des impôts.
+Plusieurs dépenses fiscales figurent sous cet article :
+
+{options}
+
+Un même article contient souvent plusieurs dispositifs distincts. Un
+amendement qui modifie un autre alinéa portant sur un tout autre sujet,
+ou qui insère un article voisin créant un dispositif nouveau, ne porte
+sur aucune des dépenses ci-dessus.
+
+Attention au sens de « etend » et « restreint » : une dépense fiscale se
+mesure par la recette à laquelle l'État renonce. Abaisser un taux réduit
+de 10 % à 5,5 % AUGMENTE la dépense fiscale (etend). Relever un taux vers
+le taux normal la RÉDUIT (restreint).
+
+Réponds uniquement ainsi :
+
+MESURE: une seule lettre, ou AUCUNE
+CATEGORIE: supprime|restreint|etend|maintient|technique|autre
+ANALYSE: une phrase
+
+(autre si MESURE vaut AUCUNE | supprime = abroge | restreint = réduit le
+champ, le plafond, la durée ou l'avantage | etend = les augmente |
+maintient = s'oppose à une suppression proposée ailleurs dans le texte |
+technique = coordination sans effet de fond)

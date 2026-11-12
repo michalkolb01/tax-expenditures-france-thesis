@@ -1,0 +1,6 @@
+model,N,events,HR,CI_low,CI_high,p
+main (score per point),278,99,0.773,0.642,0.93,0.0064
+with controls,278,99,0.786,0.653,0.946,0.011
+without closures scheduled in 2011,265,89,0.762,0.626,0.926,0.0064
+period 2011-2014,278,34,0.623,0.437,0.889,0.0092
+period 2015-2026,242,65,0.849,0.681,1.059,0.1461

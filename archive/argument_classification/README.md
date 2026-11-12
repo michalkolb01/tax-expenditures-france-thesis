@@ -21,5 +21,5 @@ The speaker and group columns of `arguments_v3_dedup.csv` (`speaker_role`, `name
 correction table not saved in the notebook).
 
 `data/intermediate/arguments_v3_dedup.csv` stays in the main package because
-`ch6/6_3_arguments/01_build_reading_workbook.py` uses it to select the interventions to read
+`2_methods/2_4_arguments/01_build_reading_workbook.py` uses it to select the interventions to read
 (see `data/README.md`).

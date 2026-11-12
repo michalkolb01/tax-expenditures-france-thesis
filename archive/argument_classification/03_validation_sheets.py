@@ -8,7 +8,7 @@ flagged as off-topic. The human columns are left empty, to be filled in.
 
 Inputs
     INTERMEDIATE / "arguments_v3.csv"   (01_classify_v3.py)
-    INTERMEDIATE / "turns.parquet"      (03_debate_corpus/04_build_turns.py)
+    INTERMEDIATE / "turns.parquet"      (1_data/1_3_parliamentary_corpus/3_blocks_and_turns/04_build_turns.py)
     INTERMEDIATE / "vm_2009_2019.parquet", "vm_2020_2026.parquet" (measure labels)
 Outputs
     INTERMEDIATE / "validation_arguments_v3.csv"   60 turns + human_position,
@@ -24,7 +24,7 @@ Source
 Known caveats
     - Re-running overwrites any hand coding already entered in the two files.
     - validation_random100.csv and human_validation_34.xlsx (in
-      04_argument_classification/) were not produced by any notebook cell;
+      archive/argument_classification/) were not produced by any notebook cell;
       their origin is not documented in code.
 """
 import sys

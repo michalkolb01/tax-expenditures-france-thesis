@@ -11,7 +11,7 @@ whether cost is mentioned. Writes in batches of 50 and resumes where it
 stopped; at the end keeps one row per turn (the latest successful one).
 
 Inputs
-    INTERMEDIATE / "turns.parquet"          (03_debate_corpus/04_build_turns.py);
+    INTERMEDIATE / "turns.parquet"          (1_data/1_3_parliamentary_corpus/3_blocks_and_turns/04_build_turns.py);
         its row index becomes the column idx, the key of every argument file
     INTERMEDIATE / "vm_2009_2019.parquet", "vm_2020_2026.parquet"
         (Voies et moyens panel: label and legal reference of each measure)

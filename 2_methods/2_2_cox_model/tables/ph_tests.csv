@@ -1,0 +1,10 @@
+model,term,chi2,df,p
+main,score_num,0.132,1,0.717
+main,GLOBAL,0.132,1,0.717
+with controls,score_num,0.144,1,0.705
+with controls,households,1.404,1,0.236
+with controls,log_cost,0.678,1,0.41
+with controls,no_cost_estimate,0.112,1,0.738
+with controls,age,0.111,1,0.739
+with controls,income_tax,0.792,1,0.374
+with controls,GLOBAL,5.723,6,0.455

@@ -8,7 +8,7 @@ turn (lowest idx) for each (text, measure) pair.
 
 Inputs
     INTERMEDIATE / "arguments_v3.csv"   (01_classify_v3.py)
-    INTERMEDIATE / "turns.parquet"      (03_debate_corpus/04_build_turns.py), for the texts
+    INTERMEDIATE / "turns.parquet"      (1_data/1_3_parliamentary_corpus/3_blocks_and_turns/04_build_turns.py), for the texts
 Outputs
     INTERMEDIATE / "arguments_v3_dedup.csv"   same columns as arguments_v3.csv
 

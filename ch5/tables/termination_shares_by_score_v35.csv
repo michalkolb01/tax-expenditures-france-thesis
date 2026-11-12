@@ -1,0 +1,25 @@
+group,variant,measures,terminated,share
+0,main (recount rule),95,41,0.432
+1,main (recount rule),81,33,0.407
+2,main (recount rule),42,10,0.238
+3,main (recount rule),60,15,0.25
+not scored,main (recount rule),101,38,0.376
+all,main (recount rule),379,137,0.361
+0,main without measures ending in 2011,92,38,0.413
+1,main without measures ending in 2011,79,31,0.392
+2,main without measures ending in 2011,41,9,0.22
+3,main without measures ending in 2011,59,14,0.237
+not scored,main without measures ending in 2011,92,29,0.315
+all,main without measures ending in 2011,363,121,0.333
+0,"main, scope-change exits removed",92,41,0.446
+1,"main, scope-change exits removed",80,33,0.412
+2,"main, scope-change exits removed",42,10,0.238
+3,"main, scope-change exits removed",56,15,0.268
+not scored,"main, scope-change exits removed",95,38,0.4
+all,"main, scope-change exits removed",365,137,0.375
+0,robustness (chapter rule),98,40,0.408
+1,robustness (chapter rule),82,31,0.378
+2,robustness (chapter rule),42,10,0.238
+3,robustness (chapter rule),60,15,0.25
+not scored,robustness (chapter rule),95,32,0.337
+all,robustness (chapter rule),377,128,0.34

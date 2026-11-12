@@ -1,0 +1,7 @@
+covariate,exp(coef),exp(coef) lower 95%,exp(coef) upper 95%,p
+score_num,0.786,0.653,0.946,0.011
+households,0.84,0.545,1.294,0.428
+log_cost,0.902,0.786,1.036,0.144
+no_cost_estimate,1.189,0.644,2.195,0.581
+age,0.99,0.98,1.0,0.052
+income_tax,1.253,0.821,1.912,0.295

@@ -1,0 +1,30 @@
+population_rule,code,reason
+recount,100112,declassified PLF 2011 (before the window)
+recount,110253,latest end date 2010 precedes the window
+recount,120135,latest end date 2010 precedes the window
+recount,140124,hand-coded: ended before 2011
+recount,180104,hand-coded: ended before 2011
+recount,190101,declassified PLF 2011 (before the window)
+recount,230303,latest end date 2006 precedes the window
+recount,230404,latest end date 2010 precedes the window
+recount,250101,declassified PLF 2011 (before the window)
+recount,320102,latest end date 2010 precedes the window
+recount,320111,hand-coded: ended before 2011
+recount,730209,latest end date 2010 precedes the window
+recount,800101,declassified PLF 2009 (before the window)
+recount,800102,declassified PLF 2009 (before the window)
+recount,800109,declassified PLF 2009 (before the window)
+chapter,100112,declassified PLF 2011 (before the window)
+chapter,130204,latest end date 1999 precedes the window
+chapter,130208,latest end date 2009 precedes the window
+chapter,130209,latest end date 2003 precedes the window
+chapter,130214,latest end date 2009 precedes the window
+chapter,140124,hand-coded: ended before 2011
+chapter,180104,hand-coded: ended before 2011
+chapter,190101,declassified PLF 2011 (before the window)
+chapter,250101,declassified PLF 2011 (before the window)
+chapter,320111,hand-coded: ended before 2011
+chapter,800108,latest end date 2007 precedes the window
+chapter,800101,declassified PLF 2009 (before the window)
+chapter,800102,declassified PLF 2009 (before the window)
+chapter,800109,declassified PLF 2009 (before the window)

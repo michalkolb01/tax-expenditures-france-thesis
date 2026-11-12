@@ -42,10 +42,11 @@ are reproduced by `02_extract_pair_debates.py` (files `data/pair_*_passages.csv`
 | Opponents of taxing the allowances: 50% of gross wage, capped at €41.50/day; "tax on cancer"; justice and humanity; 14 million chronic patients | Committee minutes 20 Oct 2025 | ✅ |
 | Rapporteur général: allowances for sick leave unrelated to the illness could be taxed; de Courson: tax half | Committee minutes 20 Oct 2025 | ✅ |
 | Committee voted to keep the exemption (identical amendments I-CF528, I-CF1182, I-CF1867, I-CF1876 adopted) | Committee minutes 20 Oct 2025 | ✅ |
-| Assembly first voted on the floor to keep the medal exemption; abolition retained by the joint committee | Finance Committee report no. 2935 on bill no. 2790 | ✅ |
-| Final law: medal exemption abolished; illness allowances kept fully exempt | Law no. 2026-103 of 19 February 2026, article 17 (I-5°); BOFiP BOI-RSA-CHAMP-20-50-40-20260506 | ✅ |
+| Floor votes of 3 November 2025 kept both exemptions (no. 1374 adopted 135–55; no. 1058 adopted 96–71). The Assembly rejected the first part of the bill on 22 November 2025, the joint committee failed on 19 December 2025, and the bill was adopted under 49.3 (January 2026) | Plenary record of 3 November 2025; votes of 22 November 2025; joint committee of 19 December 2025 | ✅ |
+| Final law: work medal exemption abolished (CGI art. 157, 6°); illness allowances still exempt | Law no. 2026-103 of 19 February 2026, article 17 (I-5°); BOFiP BOI-RSA-CHAMP-20-50-40-20260506 | ✅ |
 | Senate first voted a 50% exemption | Public Sénat | ✅ (dropped from the text) |
-| Minister: average gain about €27 per recipient | Amendment no. 15 to bill no. 2790 (LFI), reporting the minister; no plenary passage found | ⚠️ reported in amendment no. 15 only |
+| Nobel exemption (160201): abolished on the floor (3 November 2025), restored by the Senate, kept in the final law | Plenary record of 3 November 2025; Senate amendments I-58 rect. and I-168 rect. bis; law no. 2026-103 | ✅ |
+| Minister: average gain about €27 per recipient | Plenary of 3 November 2025 (3rd sitting), statement by the minister for public accounts on amendment no. 1058 | ✅ |
 | Medal exemption: €8 m a year, 300,000 households | Report no. 2935 | ✅ |
 | Restoration bill no. 2790 (12 May 2026): bonus is symbolic recognition of work, out of line with other honours | Bill no. 2790 | ✅ |
 | Finance Committee rejected bill no. 2790 | Report no. 2935 | ✅ |
@@ -64,6 +65,8 @@ are reproduced by `02_extract_pair_debates.py` (files `data/pair_*_passages.csv`
 | Rapporteur général de Courson: no mainland fund shows a positive return; tax advantage at best offsets part of the losses; Corsica and overseas "of real interest" | Committee minutes 17 Oct 2024 | ✅ |
 | Arrighi (EcoS) withdrew her amendment, "sensitive to the Corsican appeal" | Committee minutes 17 Oct 2024 | ✅ |
 | Floor amendment I-3572 (19 Oct 2024, rejected) cited the IGF report of March 2024, delayed removal to 2026 for fund managers, kept Corsica and overseas | Amendment I-3572 | ✅ |
+| Route: committee amendment I-CF1161 adopted (17 October 2024); identical amendment no. 2694 rect. rejected in plenary (24 October 2024, vote no. 56); Senate article 3 ter; joint committee report no. 296 (31 January 2025) retained it; law no. 2025-127 of 14 February 2025, mainland reduction ends 1 January 2026 | Amendments I-CF1161 and no. 2694 rect.; plenary vote no. 56; Senate text, article 3 ter; joint committee report no. 296; law no. 2025-127 | ✅ |
+| Evaluation: General Inspectorate report of October 2023 (weak impact except in Corsica and the overseas territories) | As quoted in Senate report no. 139 (2025-2026), vol. II, article 8 | ✅ |
 | Final law: mainland reduction ends for subscriptions from 1 January 2026; Corsica kept at 30% | Loi n° 2025-127 du 14 février 2025 (art. 12); France Épargne (2026) | ✅ |
 | Removal of the Corsican reduction rejected again in October 2025 (amendment CF1505) | Amendment I-CF1505 (PLF 2026) | ✅ |
 | Overseas FIP (FIPOM, 110260) also kept | Panel; France Épargne (2026) | ✅ |

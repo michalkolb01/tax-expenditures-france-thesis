@@ -18,8 +18,8 @@ Population: the 449 measures of the 2011 report with a six-digit code
 Also saves, per measure: presence in Voies et moyens 2011/2013/2019/2026,
 nature of the beneficiary in 2011 (ménages/entreprises), amendment counts
 (leg 14 and legs 15-17), and sunset columns (`sunset_raw`, `borne`,
-`borne_2011`, `info_2011`); and a random sample of 40 single-measure pairs
-for hand coding of precision.
+`borne_2011`, `info_2011`). The candidate pairs are then checked by a
+language model in 03_llm_verify_classify.py; there is no hand validation.
 
 Inputs
     data/intermediate/vm_2009_2019.parquet, vm_2020_2026.parquet  (Voies et moyens panel)
@@ -29,8 +29,6 @@ Outputs
     data/intermediate/measures_with_bands.csv   (449 measures, 361 with at least one amendment)
     data/intermediate/pairs_14.parquet          (11,036 pairs, 3,066 amendments, 296 measures)
     data/intermediate/pairs_15_17.parquet       (42,378 pairs, 12,179 amendments, 343 measures)
-    data/intermediate/precision_check_40_v3.csv (40 single-measure pairs, random_state=1;
-                                                 input of the exploratory LLM pilot)
 Reproduces
     Pipeline step, no thesis number directly. Printed counts in the notebook:
     3,671 of 9,303 references dropped as non-CGI; 7,163 measure-article-year
@@ -39,9 +37,9 @@ Reproduces
 Source
     Master Thesis_4 Matching.ipynb, cells 2 (setup), 4 (bands, presence),
     23 (nature_2011), 25 (article index), 27 (join), 32-33 (sunset columns),
-    37 (save), 40-41 (precision sample; cell 40 wrote the same sample as
-    precision_check_40_v2.csv, cell 41 re-saved it as _v3, which is the only
-    one written here).
+    37 (save), 40 (count of amendments resolving to one measure).
+    Not included: the 40-pair sample drawn in cells 40-41 for the LLM pilot
+    (archived with its coding in archive/matching_validation/).
     Dropped: cells 5-21 (early survival analysis, superseded by the Chapter 5 scripts in 2_methods/), 29, 31,
     34-35, 39 (descriptive tables, nothing saved), 42-52 (dead).
 Changes from the notebook
@@ -181,25 +179,10 @@ def main():
     print(f"{len(g)} measures, "
           f"{(g['n_amend_14'] + g['n_amend_15_17'] > 0).sum()} with at least one amendment")
 
-    # --- precision sample of 40 single-measure pairs (cells 40-41) ---
+    # --- amendments resolving to one measure (cell 40) ---
     pairs = pd.concat([m14, m], ignore_index=True)
     per_all = pairs.groupby("uid")["measure"].nunique()
-    solo = pairs[pairs["uid"].map(per_all) == 1].drop_duplicates("uid")
-    print(f"{len(solo):,} amendments resolving to one measure")
-
-    lib = (pd.concat([P[["numero", "vm_year", "libelle", "reference"]],
-                      vm[["numero", "vm_year", "libelle", "reference"]]])
-             .sort_values("vm_year").drop_duplicates("numero", keep="last")
-             .set_index("numero"))
-
-    check = solo.sample(40, random_state=1)[["uid", "measure", "article", "dispositif", "expose"]].copy()
-    check["mesure_libelle"] = check["measure"].map(lib["libelle"])
-    check["mesure_reference"] = check["measure"].map(lib["reference"])
-    for c in ["dispositif", "expose"]:
-        check[c] = check[c].fillna("").str.replace(r"\s+", " ", regex=True)
-    check.to_csv(DATA / "precision_check_40_v3.csv", index=False)
-    print(check.shape)
-
+    print(f"{(per_all == 1).sum():,} amendments resolving to one measure")
 
 if __name__ == "__main__":
     main()

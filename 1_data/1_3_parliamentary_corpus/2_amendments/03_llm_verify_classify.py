@@ -36,7 +36,8 @@ Outputs
     data/intermediate/classified_multi.csv   (7,596 rows, 2,958 resolved to a measure)
     data/intermediate/amendments_classified.csv  (7,861 amendments, 272 measures)
 Reproduces
-    Pipeline step. amendments_classified.csv is the file used by
+    Pipeline step. The corpus is used in the thesis only to locate debates,
+    which are then read. amendments_classified.csv is the file used by
     2_methods/2_5_pairs/01_pair_search.py (amendments to remove or narrow measures).
     Category counts in the thesis run: single-article etend 3,367,
     restreint 998, supprime 216, technique 205, maintient 109; multi-article
@@ -49,8 +50,8 @@ Source
     cell 6), 22 (classify_choice), 23 (setup and candidates for the
     multi-article pass), 25 (LETTERS), 26 (multi-article run ->
     classified_multi.csv), 27 (combine -> classified_combined.csv).
-    Dropped: cells 8 and 10 (40-pair pilot, exploratory), 11 (descriptive),
-    15 (classification_meta.json, see caveats), 18, 19 and 24 (superseded
+    Dropped: cells 8 and 10 (40-pair pilot), 11 (descriptive),
+    15 (classification_meta.json, archived), 18, 19 and 24 (superseded
     multi-article runs: cell 19 wrote the first 600 rows; cell 24 failed with
     a code error on the 6,996 others, rows that cell 26 dropped and redid),
     28-38 (chapter-5 analysis).
@@ -69,7 +70,7 @@ Changes from the notebook
     - The client is created only when some rows remain to classify.
     - The combined file is written as amendments_classified.csv (the notebook
       wrote classified_combined.csv; the rename to the package name was done
-      by hand outside the notebooks).
+      outside the notebooks).
 Known caveats
     - The first 600 rows of classified_multi.csv in the thesis run predate the
       code shown here: written by an earlier version of the loop (cell 19,
@@ -78,14 +79,10 @@ Known caveats
     - Temperature was not set (the installed SDK rejected the parameter), so
       labels cannot be regenerated identically; the labelled files are the
       record.
-    - Cell 15 wrote classification_meta.json with validation figures typed in
-      by hand (precision 0.78 before / 0.98 after the filter, direction
-      agreement 0.92, coverage counts) and no cell computing them. Not
-      reproduced here. The validation of the final corpus (40 accepted pairs
-      coded by hand) is not in any notebook.
-    - The 40-pair pilot (cells 8 and 10) is left out. Its "hand coding" file
-      (precision_40_v3_coded.csv) names the human judgement column
-      `claude_relevant`, which suggests it was not (only) coded by hand.
+    - No hand validation of the matching or of the direction labels. The
+      samples drawn in the notebook to validate them, their coding columns and
+      the figures typed in cells 15 and 31 are archived in
+      archive/matching_validation/ and are not used in the thesis.
 """
 import os
 import re

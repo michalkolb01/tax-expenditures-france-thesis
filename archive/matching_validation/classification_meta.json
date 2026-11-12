@@ -1,0 +1,24 @@
+{
+  "classification": {
+    "file": "classified_all.csv",
+    "n_amendments": 7649,
+    "n_accepted": 4903,
+    "model": "claude-sonnet-4-5",
+    "temperature": "not set",
+    "date": "2026-08-30T21:33:34+00:00"
+  },
+  "validation": {
+    "precision_article_matching_only": 0.78,
+    "precision_after_llm_filter": 0.98,
+    "direction_agreement": 0.92,
+    "n": 40,
+    "note": "direction errors are asymmetric, all toward 'etend', so restrictive counts are conservative"
+  },
+  "coverage": {
+    "measures_with_code": 449,
+    "with_article_recorded": 432,
+    "with_candidate_match": 361,
+    "with_single_measure_match": 158,
+    "with_5plus_accepted": 84
+  }
+}

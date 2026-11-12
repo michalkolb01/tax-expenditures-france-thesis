@@ -1,0 +1,17 @@
+{
+  "article_matching_only": {
+    "precision": 0.78,
+    "n": 40
+  },
+  "single_article_pass": {
+    "precision": 0.98,
+    "direction_agreement": 0.92,
+    "n": 40
+  },
+  "multi_article_pass": {
+    "measure_choice": 0.9,
+    "direction_agreement": 0.97,
+    "n": 40
+  },
+  "note": "In the multi-article pass the model under-uses AUCUNE: three of four measure errors are amendments concerning a provision not among the candidates shown, assigned to the nearest one."
+}

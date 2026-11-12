@@ -1,8 +1,8 @@
-"""ARCHIVED - Hand-validation sheets for the version-3 argument classification.
+"""ARCHIVED - Validation sheets drawn for the version-3 argument classification.
 
 Earlier stage of the project, not used in the thesis.
 
-Draws two samples for checking by hand: 60 classified turns stratified by
+Draws two samples for checking: 60 classified turns stratified by
 category (up to 6 per category, off-topic excluded), and 30 turns the model
 flagged as off-topic. The human columns are left empty, to be filled in.
 

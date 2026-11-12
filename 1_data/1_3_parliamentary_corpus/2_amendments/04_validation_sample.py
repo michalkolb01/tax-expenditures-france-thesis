@@ -1,6 +1,9 @@
-"""Rule-based validation of the amendment-measure matching (no LLM).
+"""Samples prepared to validate the amendment-measure matching (no LLM).
 
-Two workbooks to code by hand:
+PREPARED BUT NOT CODED: the two workbooks below were drawn but never coded,
+and nothing in the thesis rests on them. The matching has no hand validation.
+
+Two workbooks, drawn for coding:
 
 1. Precision sample: 100 (amendment, measure) pairs from pairs_14 and
    pairs_15_17, stratified by 2011 score group (0, 1, 2, 3, not evaluated;
@@ -12,7 +15,7 @@ Two workbooks to code by hand:
    `correct_match` (yes / no / partly) and `notes` are left empty for coding.
 2. Silent survivors: measures scored 0 in 2011, listed in Voies et moyens
    2026 and still open to new beneficiaries (`fin_fait_generateur` "Non borné"
-   or a year >= 2026), with no matched amendment, to search for by hand;
+   or a year >= 2026), with no matched amendment, to search for;
    plus a context sheet of all open score-0 measures.
 
 The article index is rebuilt exactly as in 02_match_articles.py
@@ -42,9 +45,7 @@ Changes from the notebook
     - Paths through src/config.py; outputs in INTERMEDIATE / "validation".
 Known caveats
     - Needs openpyxl.
-    - This is not the source of validation_random100.csv (no notebook writes
-      that file) and the hand-coded results of these two workbooks are not in
-      the package.
+    - The workbooks were prepared but not coded.
 """
 import html
 import re

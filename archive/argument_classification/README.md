@@ -12,7 +12,7 @@ interventions were read by hand (section 6.3).
 | `02_dedup.py` | Deduplication on (text, measure) → `arguments_v3_dedup.csv` (3,352 interventions) |
 | `03_validation_sheets.py` | Validation samples → `validation_arguments_v3.csv`, `validation_offtopic_v3.csv` |
 | `prompt_arguments_v0.txt` … `v2.txt` | Earlier prompts (superseded; source cells in each file's header) |
-| `validation_random100.csv`, `human_validation_34.xlsx` | Validation files of the classification. No notebook writes them; they were prepared by hand. |
+| `validation_random100.csv`, `human_validation_34.xlsx` | Validation files of the classification. No notebook writes them. |
 | `validation_arguments_v3.csv` | Validation sample of the v3 classification |
 
 Source notebooks: *08_arguments_v3* and the last cells of *Master Thesis_7 Committee Debates*.

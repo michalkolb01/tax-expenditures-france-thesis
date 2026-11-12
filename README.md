@@ -34,7 +34,7 @@ each folder has a README.
 
 Shared data are in `data/` (`raw/` for downloaded sources, `intermediate/` for built datasets; see
 `data/README.md`); `src/` holds `config.py` (paths) and `thesis_style.py` (figure style); figures go to
-`figures/`. Earlier stages that the thesis does not use are in `archive/`.
+`figures/`. Earlier stages and files that the thesis does not use are in `archive/` (argument classification, the v2 Chapter 5 build, the matching validation samples).
 
 ## Two bases in Chapter 6
 
@@ -114,15 +114,13 @@ Each `pdffonts` listing should show `LMRoman10-Regular` (and `CMMI10`/`CMR10` fo
    year comes from) gives 121 / 16. Both columns and their cross-tabulation are in
    `1_data/1_2_panel_2009_2026/CHANGELOG.md` and `termination_panel_by_year.xlsx`.
 2. **Table 5.1** is computed over the 470 measures examined by the committee, not the 379 followed.
-3. **Validation of the amendment matching** (`1_data/1_3_parliamentary_corpus/2_amendments/`):
-   matching on the tax-code article (*Master Thesis_4 Matching*, cells 25 and 27) is followed by an LLM
-   check of each match and of the direction of each amendment (*Master Thesis 5_Classification*,
-   cells 6, 13, 20–27). The validation figures (precision 78% for article matching alone, 98% after the
-   LLM filter with 92% direction agreement, 90% / 97% for the multi-article pass, n = 40 each) are
-   hard-coded in cells 15 and 31. Only the multi-article figures can be recomputed from a coded file
-   (`validation_multi_40_coded.csv`, columns `my_measure_ok`, `my_dir`: 36/40, 35/36). The 78% comes
-   from `precision_40_v3_coded.csv`, whose judgement column is `claude_relevant`; no coded file was
-   found for the 98% / 92%. These files are in the author's Drive, not in the package.
+3. **Amendment matching.** Amendments are matched to measures on the tax-code article
+   (*Master Thesis_4 Matching*, cells 25 and 27); each candidate link is checked by a language model,
+   which also labels the direction of the amendment (*Master Thesis 5_Classification*, cells 6, 13,
+   20–27). There is no hand validation of the matching. In the thesis the corpus is used only to locate
+   debates, which are then read. The validation samples drawn in the notebooks, whose coding was not done
+   by the author, are archived in `archive/matching_validation/` and not used; a 100-pair sample
+   (`12_matching_validation.ipynb`) was prepared but not coded.
 4. **Proportional hazards.** Scaled Schoenfeld residual tests do not reject proportionality (score
    p = 0.72 in the main model, 0.71 with controls; global p = 0.72 and 0.46);
    `2_methods/2_2_cox_model/tables/ph_tests.csv`.
@@ -158,11 +156,12 @@ and font size of your LaTeX document, so that figure text matches body text.
 
 ## Large language model
 
-One pipeline step used a large language model (Anthropic Claude, `claude-sonnet-4-5`, via the API): the
-verification of amendment–measure matches and the direction of each amendment
-(`1_data/1_3_parliamentary_corpus/2_amendments/03_llm_verify_classify.py`). The prompts are stored with
-the code; the API key is read from the environment variable `ANTHROPIC_API_KEY`. The LLM labels cannot
-be regenerated identically.
+One pipeline step used a large language model (Anthropic Claude, `claude-sonnet-4-5`, via the API): each
+candidate amendment–measure link found on the tax-code article is checked by the model, which also labels
+the direction of the amendment (`1_data/1_3_parliamentary_corpus/2_amendments/03_llm_verify_classify.py`).
+There is no hand validation of this step; the corpus is used only to locate debates, which are then read.
+The prompts are stored with the code; the API key is read from the environment variable
+`ANTHROPIC_API_KEY`. The labels cannot be regenerated identically.
 
 ## Licence and sources
 

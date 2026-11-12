@@ -9,3 +9,4 @@ Samples drawn to validate the amendment–measure matching. The coding columns w
 | `validation_multi_40_coded.csv` | 40 pairs from the multi-article pass (*Master Thesis 5_Classification*, cell 30) with coding columns `my_measure_ok`, `my_dir`, `note` | uploaded to Drive; no notebook writes it |
 | `classification_meta.json` | run metadata with the figures typed in *Master Thesis 5_Classification*, cell 15 | notebook 5, cell 15 |
 | `validation_summary.json` | the figures typed in *Master Thesis 5_Classification*, cell 31 | notebook 5, cell 31 |
+| `draw_sample_40.py` | the code that drew the 40-pair sample (excerpt of `02_match_articles.py`, unchanged) | *Master Thesis_4 Matching*, cells 40–41 |

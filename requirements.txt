@@ -4,4 +4,9 @@ openpyxl>=3.1
 matplotlib>=3.8
 lifelines>=0.27
 statsmodels>=0.14
-anthropic>=0.30      # only for the LLM steps in 02_amendments/ and 04_argument_classification/
+# pipeline only (00_acquisition/ to 03_debate_corpus/):
+requests>=2.31
+beautifulsoup4>=4.12
+pypdf>=4.0
+xlrd>=2.0            # 2025-2026 annex spreadsheets (.xls)
+anthropic>=0.30      # only for the LLM step in 02_amendments/ (and archive/argument_classification/)

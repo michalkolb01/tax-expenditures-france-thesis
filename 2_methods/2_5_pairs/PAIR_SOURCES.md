@@ -72,6 +72,9 @@ are reproduced by `02_extract_pair_debates.py` (files `data/pair_*_passages.csv`
 | Overseas FIP (FIPOM, 110260) also kept | Panel; France Épargne (2026) | ✅ |
 | 20 Corsica-specific measures in the annex (title contains "Corse"); 10 in force in 2026, 7 of these scored 0 and 3 were not in the 2011 report | Panel (keyword search on titles) | ✅ (state the keyword rule) |
 
+**Note on the General Inspectorate reports (Pair C).** Two reports are involved and both dates are correct:
+(1) the evaluation of the Madelin reduction (IR-PME), October 2023 (vie-publique.fr, rapport 293818), which found no significant effect except in Corsica and the overseas territories and recommended keeping only those versions after 2025 (the "Evaluation" row); (2) the spending review on aid to businesses, March 2024 (vie-publique.fr, rapport 295437), cited in committee and in amendment I-3572 (the "Floor amendment I-3572" row).
+
 ## Selection of the pairs
 
 See `01_pair_search.py`: search 1 (same bill, same family, different fate) and
